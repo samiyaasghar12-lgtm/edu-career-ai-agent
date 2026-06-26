@@ -1,5 +1,5 @@
 streamlit>=1.37.0
-google-genai>=1.0.0
+google-generativeai
 python-dotenv>=1.0.0
 requests>=2.31.0
 PyPDF2>=3.0.0
