@@ -4,7 +4,7 @@ import json
 import base64
 from datetime import datetime
 from dotenv import load_dotenv
-from google import genai
+import google.generativeai as genai
 from google.genai import types
 
 try:
