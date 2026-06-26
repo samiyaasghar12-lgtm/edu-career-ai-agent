@@ -1,0 +1,30 @@
+# Environment variables (API keys — NEVER upload to GitHub)
+.env
+
+# Application Storage & Memory (Locks your private chat histories and profiles)
+chat_memory.json
+automated_agent_memory.json
+profile.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Streamlit cache and configs
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
