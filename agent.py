@@ -3,6 +3,7 @@ import os
 import json
 from dotenv import load_dotenv
 import base64
+st.set_page_config(page_title="IntellectAI", layout="wide")
 from datetime import datetime
 from google import genai
 from google.genai import types
