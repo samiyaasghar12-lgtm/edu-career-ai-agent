@@ -1,10 +1,10 @@
 import streamlit as st
 import os
 import json
+from dotenv import load_dotenv
 import base64
 from datetime import datetime
-from dotenv import load_dotenv
-import google.generativeai as genai
+from google import genai
 from google.genai import types
 
 try:
