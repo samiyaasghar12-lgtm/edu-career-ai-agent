@@ -222,48 +222,34 @@ def extract_file_text(file_path=None, uploaded_file=None, file_name=""):
 
 def ask_gemini(user_text):
     if not API_KEY or API_KEY in ("your_new_api_key_here", ""):
-        return (
-            "⚠️ **API key missing or expired.**\n\n"
-            "**Local (your PC):** Open the `.env` file and set:\n"
-            "```\nGEMINI_API_KEY=apni_nayi_key_yahan_paste_karo\n```\n\n"
-            "**Streamlit Cloud:** App Settings → Secrets mein yeh add karo:\n"
-            "```\nGEMINI_API_KEY = \"apni_nayi_key_yahan_paste_karo\"\n```\n\n"
-            "Nayi key banao: https://aistudio.google.com/apikey"
-        )
+        return "⚠️ API key missing or expired."
+    
     try:
-        genai.configure(api_key=API_KEY)
+        genai.configure(api_key=api_key) # Yahan verify karein ke variable 'API_KEY' hai ya 'api_key'
         
+        # History setup
         history = []
         for m in st.session_state.messages[:-1]:
             role = "user" if m["role"] == "user" else "model"
             history.append({"role": role, "parts": [m["content"]]})
 
+        # Context setup
         payload_text = user_text
-        active_context = ""
         if st.session_state.sources:
             active_context = "\n\n".join(s.get("content", "") for s in st.session_state.sources if s.get("content"))
-        if active_context:
-            payload_text = f"[ATTACHED SOURCE CONTEXT]\n{active_context}\n\n[USER INQUIRY]\n{user_text}"
-
+            if active_context:
+                payload_text = f"[CONTEXT]\n{active_context}\n\n[USER INQUIRY]\n{user_text}"
+        
         history.append({"role": "user", "parts": [payload_text]})
 
-        for model_name in MODELS:
-            try:
-                model = genai.GenerativeModel(
-                    model_name=model_name,
-                    system_instruction=SYSTEM_PROMPT
-                )
-                resp = model.generate_content(history)
-                return resp.text or "(Empty response)"
-            except Exception:
-                continue
-        return "⚠️ All models are busy. Please try again."
+        # FIX: Yahan loop hata diya hai aur direct model call kar rahe hain
+        model = genai.GenerativeModel("gemini-1.5-flash")
+        resp = model.generate_content(history)
+        
+        return resp.text
         
     except Exception as e:
-        msg = str(e)
-        if "429" in msg or "quota" in msg.lower():
-            return "🚦 **Daily free-tier limit reached.** Please check your API quota."
-        return f"❌ **Error:** {msg}"
+        return f"❌ Error: {str(e)}"
 
 def transcribe_audio(audio_bytes, mime_type="audio/wav"):
     if not API_KEY or API_KEY in ("your_new_api_key_here", ""):
