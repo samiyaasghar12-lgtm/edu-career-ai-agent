@@ -3,10 +3,9 @@ import os
 import json
 from dotenv import load_dotenv
 import base64
-st.set_page_config(page_title="IntellectAI", layout="wide")
 from datetime import datetime
-from google import genai
-from google.genai import types
+import google.generativeai as genai
+from google.generativeai.types import Content, Part, Blob
 
 try:
     import requests
@@ -56,7 +55,7 @@ except Exception:
 API_KEY = (_secrets_key or _env_key or "").strip()
 
 # Model fallback chain
-MODELS = ["gemini-2.5-flash", "gemini-1.5-flash", "gemini-1.5-pro"]
+MODELS = ["gemini-1.5-pro", "gemini-pro"]
 
 
 def image_data_uri(path):
