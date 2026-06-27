@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 import base64
 from datetime import datetime
 import google.generativeai as genai
-from google.generativeai.types import Content, Part, Blob
 
 try:
     import requests
