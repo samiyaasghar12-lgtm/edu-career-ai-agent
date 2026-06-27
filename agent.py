@@ -221,11 +221,16 @@ def extract_file_text(file_path=None, uploaded_file=None, file_name=""):
     return f"[Saved source: {name}]"
 
 def ask_gemini(user_text):
-    if not API_KEY or API_KEY in ("your_new_api_key_here", ""):
-        return "⚠️ API key missing or expired."
+    # Ye 2 lines add karein taake function ke andar key mil jaye
+    global API_KEY 
+    api_key = API_KEY if 'API_KEY' in globals() else st.secrets.get("GEMINI_API_KEY")
+
+    if not api_key:
+        return "❌ Error: API Key missing."
     
     try:
-        genai.configure(api_key=api_key) # Yahan verify karein ke variable 'API_KEY' hai ya 'api_key'
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel("gemini-1.5-flash")
         
         # History setup
         history = []
