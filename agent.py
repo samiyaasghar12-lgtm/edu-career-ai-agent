@@ -230,7 +230,7 @@ def ask_gemini(user_text):
     
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-1.5-pro")
         
         # History setup
         history = []
@@ -247,10 +247,9 @@ def ask_gemini(user_text):
         
         history.append({"role": "user", "parts": [payload_text]})
 
-        # FIX: Yahan loop hata diya hai aur direct model call kar rahe hain
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        # Direct model calling
+        model = genai.GenerativeModel("gemini-2.5-flash")
         resp = model.generate_content(history)
-        
         return resp.text
         
     except Exception as e:
