@@ -554,51 +554,231 @@ with st.sidebar:
     if st.button("⚙️  Settings", use_container_width=True):
         st.session_state.view_state = "settings"
         st.rerun()
-
 if st.session_state.view_state == "profile":
-    st.markdown(f"## {current_profile['name']}\n{current_profile['status']} · {current_profile['university']}")
+
+    st.image(PROFILE_PIC_URI, width=120)
+
+    st.title(current_profile["name"])
+    st.caption(
+        f"{current_profile['status']} · {current_profile['university']}"
+    )
+
     if st.session_state.profile_editing:
-        with st.form("edit_form"):
-            p_name = st.text_input("Name", value=current_profile["name"])
-            p_skills = st.text_area("Skills", value=current_profile.get("skills", ""))
-            if st.form_submit_button("Save"):
-                save_profile({"name": p_name, "skills": p_skills})
+
+        with st.form("profile_form"):
+
+            name = st.text_input(
+                "Full Name",
+                current_profile.get("name", "")
+            )
+
+            first_name = st.text_input(
+                "First Name",
+                current_profile.get("first_name", "")
+            )
+
+            last_name = st.text_input(
+                "Last Name",
+                current_profile.get("last_name", "")
+            )
+
+            program = st.text_input(
+                "Program",
+                current_profile.get("program", "")
+            )
+
+            department = st.text_input(
+                "Department",
+                current_profile.get("department", "")
+            )
+
+            year = st.text_input(
+                "Year",
+                current_profile.get("year", "")
+            )
+
+            status = st.text_input(
+                "Status",
+                current_profile.get("status", "")
+            )
+
+            university = st.text_input(
+                "University",
+                current_profile.get("university", "")
+            )
+
+            matriculation = st.text_area(
+                "Matriculation",
+                current_profile.get("matriculation", "")
+            )
+
+            intermediate = st.text_area(
+                "Intermediate",
+                current_profile.get("intermediate", "")
+            )
+
+            certifications = st.text_area(
+                "Certifications",
+                current_profile.get("certifications", "")
+            )
+
+            contact = st.text_input(
+                "Contact",
+                current_profile.get("contact", "")
+            )
+
+            address = st.text_area(
+                "Address",
+                current_profile.get("address", "")
+            )
+
+            skills = st.text_area(
+                "Skills",
+                current_profile.get("skills", "")
+            )
+
+            experience = st.text_area(
+                "Experience",
+                current_profile.get("experience", "")
+            )
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                save_btn = st.form_submit_button("💾 Save")
+
+            with col2:
+                cancel_btn = st.form_submit_button("❌ Cancel")
+
+            if save_btn:
+
+                save_profile({
+                    "name": name,
+                    "first_name": first_name,
+                    "last_name": last_name,
+                    "program": program,
+                    "department": department,
+                    "year": year,
+                    "status": status,
+                    "university": university,
+                    "matriculation": matriculation,
+                    "intermediate": intermediate,
+                    "certifications": certifications,
+                    "contact": contact,
+                    "address": address,
+                    "skills": skills,
+                    "experience": experience
+                })
+
                 st.session_state.profile_editing = False
                 st.rerun()
+
+            if cancel_btn:
+                st.session_state.profile_editing = False
+                st.rerun()
+
     else:
+
         if st.button("✏️ Edit Profile"):
             st.session_state.profile_editing = True
             st.rerun()
-        st.write("Skills:", current_profile.get("skills", ""))
+
+        st.markdown("---")
+
+        st.write("### Personal Information")
+        st.write("First Name:", current_profile.get("first_name", ""))
+        st.write("Last Name:", current_profile.get("last_name", ""))
+
+        st.write("### Academic Information")
+        st.write("Program:", current_profile.get("program", ""))
+        st.write("Department:", current_profile.get("department", ""))
+        st.write("Year:", current_profile.get("year", ""))
+        st.write("Status:", current_profile.get("status", ""))
+        st.write("University:", current_profile.get("university", ""))
+
+        st.write("### Education")
+        st.write("Matriculation:", current_profile.get("matriculation", ""))
+        st.write("Intermediate:", current_profile.get("intermediate", ""))
+
+        st.write("### Certifications")
+        st.write(current_profile.get("certifications", ""))
+
+        st.write("### Contact")
+        st.write(current_profile.get("contact", ""))
+
+        st.write("### Address")
+        st.write(current_profile.get("address", ""))
+
+        st.write("### Skills")
+        st.write(current_profile.get("skills", ""))
+
+        st.write("### Experience")
+        st.write(current_profile.get("experience", ""))
+
 elif st.session_state.view_state == "settings":
+
     if st.button("Clear History"):
         st.session_state.all_chats = []
         save_memory([])
         new_chat()
         st.rerun()
+
 else:
+
     if not st.session_state.messages:
-        st.markdown(f"<div class='hero-wrapper'><img src='{ROBOT_URI}' class='hero-robot-img'/>"
-                    f"<div class='hero-title-main'>What's on your mind, {current_profile['name']}?</div></div>", unsafe_allow_html=True)
+
+        st.markdown(
+            f"<div class='hero-wrapper'>"
+            f"<img src='{ROBOT_URI}' class='hero-robot-img'/>"
+            f"<div class='hero-title-main'>What's on your mind, {current_profile['name']}?</div>"
+            f"</div>",
+            unsafe_allow_html=True
+        )
+
     else:
+
         for m in st.session_state.messages:
+
             with st.chat_message(m["role"]):
                 st.markdown(m["content"])
-    
-    st.markdown('<div class="disclaimer-text">IntellectAI can make mistakes.</div>', unsafe_allow_html=True)
-    c1, c2, c3 = st.columns(3)
-    with c1: 
-        if st.button("📤 Upload", use_container_width=True): upload_dialog()
-    with c2: 
-        if st.button("🌐 Web", use_container_width=True): websites_dialog()
-    with c3: 
-        if st.button("📁 Drive", use_container_width=True): drive_dialog()
 
-    submission = st.chat_input("Ask about careers, academics...")
+    st.markdown(
+        '<div class="disclaimer-text">IntellectAI can make mistakes.</div>',
+        unsafe_allow_html=True
+    )
+
+    c1, c2, c3 = st.columns(3)
+
+    with c1:
+        if st.button("📤 Upload", use_container_width=True):
+            upload_dialog()
+
+    with c2:
+        if st.button("🌐 Web", use_container_width=True):
+            websites_dialog()
+
+    with c3:
+        if st.button("📁 Drive", use_container_width=True):
+            drive_dialog()
+
+    submission = st.chat_input(
+        "Ask about careers, academics..."
+    )
+
     if submission:
-        st.session_state.messages.append({"role": "user", "content": submission})
+
+        st.session_state.messages.append({
+            "role": "user",
+            "content": submission
+        })
+
         with st.spinner("Thinking..."):
             response = ask_gemini(submission)
-        st.session_state.messages.append({"role": "assistant", "content": response})
+
+        st.session_state.messages.append({
+            "role": "assistant",
+            "content": response
+        })
+
         persist_current()
         st.rerun()
