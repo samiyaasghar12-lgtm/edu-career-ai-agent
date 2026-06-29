@@ -33,7 +33,7 @@ PROFILE_FILE = "profile.json"
 ROBOT_FILE = "robot.png"
 PROFILE_PIC_FILE = "profile_pic.png"
 ROBOT_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBWrVbKZGdXiQ4iDQu-amwsD7Vy8e1q8ng_MuTpsneIw&s=10"
-PROFILE_PIC_B64 = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAsgMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwECB//EADgQAAIBAgIIBAIIBwEAAAAAAAABAgMEBRESFCExQVRxoRNRUmEiMkJDU4GRscHRIzNygpLw8RX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A/WwAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPNnED08lJRjnNqMfNkK/xGNt/DgtKr5cI9Sjr16teWlVm5P3ZcF/PErSD21VL+lNnysVs3vqSX9jM8Bg1NKvSrfyqsZ9GdTJJuLzi2nwaeRZ2WKyhlC6znH18V1JgugeRakh4tOLWaae89AAAAAAAAAAAAAAAAAAAAQ8Su9VpfDl4k9kfb3JhmsQr6xd1JL5U9GPRCFR222229re9ngBUAAAABRZYReOlUVCo/gnsjnwZeGSNLYV9YtKdR/NllLqiUSAARQAAAAAAAAAAAAAAAHO4n4dCpPjGLZleBp75Z2VfL0MzBYlAAAAAAAAC5wGedOrT8mn/AL+BTFtgC+Ks/aP6gXAAIoAAAAAAAAAAAAAAAD5qQ06coPisjKSi4ycXvWxmtKHGLfwrjxF8tTb9/EQV4AKgAAAAAF5gdNxtpzf05fkimpU5VakYQWcpPI09CkqFGFKO6MUl7jVdAAQAAAAAAAAAAAAAAAADlc0I3NGVKo8k9z8vc6gDLXFvUtqjhUWW3Y+DRyNTcUKVxDQqxzjw80U9zhNaDboPxF6dzKK4HSdGrTeU6cov3iz5UJN5KMn0QR8nq25LiyVQw65rPZDQj6p7C3s8PpWzU38dT1NbF0CuWF2PgLxaqfiS3L0osQCAAAAAAAAAAAAAAAAAAQ7zEaVs3HLTqL6MXu6sCYR617b0M1Oom1wjtZR3N9cXGanNxh6YPYRS4mrmpjUE8qVGUveTyI0sYuJP4VTj0WZXgCY8UvH9al0igsSu08/FX+C/YhgKnwxa6jv0H1id6eNS+so5rzjL9yqARoKOKWtXfN035TWRMi1KOcWmvNPYZI60a9WhLSozlF+WewYa1IKu0xeMso3K0X647n+xZpqSTi8092RFegAAAAAAAAAAPvBUYvevN21J7PrGvyA+cQxNycqNtLKO5zXHoVQBQAAQAAAAAAAAAAAl2V7UtZb9Om98H+hEAVqqNWFamp0nnF9joZuwu5WtXPa6cvnX6mji1KKlF5prNPzIPQAAAAAAAcbyvq1vOrxS+Fe/AzDbbbbzb3suMem1GjTXFuX4f9KYsKAAIAAAAAAAAAAAAAAAAF1glfTpyoSe2G1dGUpLwuo6d9TyfzPRfvmKsaMAEAAAAABwuLajXadampNbE2c//PtPsI9wCwNQtOXh3GoWn2Ee4ADULTl49xqFpy8e4ADULTl49xqFpy8e4ADULTl49xqFpy8e4ADULTl49z6p2NrGcZRoRTi809u9AASfMAEAAAf/2Q=="
+PROFILE_PIC_B64 = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAsgMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwECB//EADgQAAIBAgIIBAIIBwEAAAAAAAABAgMEBRESFCExQVRxoRNRUmEiMkJDU4GRscHRIzNygpLw8RX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A/WwAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPNnED08lJRjnNqMfNkK/xGNt/DgtKr5cI9Sjr16teWlVm5P3ZcF/PErSD21VL+lNnysVs3vqSX9jM8Bg1NKvSrfyqsZ9GdTJJuLzi2nwaeRZ2WKyhlC6znH18V1JgugeRakh4tOLWaae89AAAAAAAAAAAAAAAAAAAAQ8Su9VpfDl4k9kfb3JhmsQr6xd1JL5U9GPRCFR222229re9ngBUAAAABRZYReOlUVCo/gnsjnwZeGSNLYV9YtKdR/NllLqiUSAARQAAAAAAAAAAAAAAAHO4n4dCpPjGLZleBp75Z2VfL0MzBYlAAAAAAAAC5wGedOrT8mn/AL+BTFtgC+Ks/aP6gXAAIoAAAAAAAAAAAAAAAD5qQ06coPisjKSi4ycXvWxmtKHGLfwrjxF8tTb9/EQV4AKgAAAAAF5gdNxtpzf05fkimpU5VakYQWcpPI09CkqFGFKO6MUl7jVdAAQAAAAAAAAAAAAAAAADlc0I3NGVKo8k9z8vc6gDLXFvUtqjhUWW3Y+DRyNTcUKVxDQqxzjw80U9zhNaDboPxF6dzKK4HSdGrTeU6cov3iz5UJN5KMn0QR8nq25LiyVQw65rPZDQj6p7C3s8PpWzU38dT1NbF0GuWF2PgLxaqfiS3L0osQCAAAAAAAAAAAAAAAAAAQ7zEaVs3HLTqL6MXu6sCYR617b0M1Oom1wjtZR3N9cXGanNxh6YPYRS4mrmpjUE8qVGUveTyI0sYuJP4VTj0WZXgCY8UvH9al0igsSu08/FX+C/YhgKnwxa6jv0H1id6eNS+so5rzjL9yqARoKOKWtXfN035TWRMi1KOcWmvNPYZI60a9WhLSozlF+WewYa1IKu0xeMso3K0X647n+xZpqSTi8092RFegAAAAAAAAAAPvBUYvevN21J7PrGvyA+cQxNycqNtLKO5zXHoVQBQAAQAAAAAAAAAAAl2V7UtZb9Om98H+hEAVqqNWFamp0nnF9joZuwu5WtXPa6cvnX6mji1KKlF5prNPzIPQAAAAAAAcbyvq1vOrxS+Fe/AzDbbbbzb3suMem1GjTXFuX4f9KYsKAAIAAAAAAAAAAAAAAAAF1glfTpyoSe2G1dGUpLwuo6d9TyfzPRfvmKsaMAEAAAAABwuLajXadampNbE2c//PtPsI9wCwNQtOXh3GoWn2Ee4ADULTl49xqFpy8e4ADULTl49xqFpy8e4ADULTl49xqFpy8e4ADULTl49z6p2NrGcZRoRTi809u9AASfMAEAAAf/2Q=="
 _env_key = os.getenv("GEMINI_API_KEY", "")
 try:
     _secrets_key = st.secrets.get("GEMINI_API_KEY", "")
@@ -276,6 +276,12 @@ st.markdown("""
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
         background-color: #f8f9fc !important;
     }
+    
+    /* Override primary theme colors to completely remove Streamlit orange styling */
+    html, body, [data-testid="stAppViewContainer"] {
+        --primary-color: #8b5cf6 !important;
+    }
+    
     .main .block-container, div[data-testid="stAppViewBlockContainer"] {
         max-width: 820px !important;
         margin: 0 auto !important;
@@ -435,25 +441,38 @@ st.markdown("""
         justify-content: center !important;
         gap: 12px !important;
     }
-    div[data-testid="stColumn"] div[data-testid="stButton"] > button {
-        background-color: #f1f3f6 !important;
-        border: 1px solid #e2e8f0 !important;
+    
+    /* Task 2: Style all buttons in the main chat area to match sidebar aesthetic */
+    div[data-testid="stMain"] button, 
+    div[data-testid="stMain"] div[data-testid="stButton"] > button,
+    div[data-testid="stMain"] div[data-testid="stFormSubmitButton"] > button {
+        background-color: #2b2b40 !important;
+        color: #ffffff !important;
+        border: 1px solid #3e3e5c !important;
         border-radius: 24px !important;
-        color: #4a5568 !important;
         font-family: 'Inter', sans-serif !important;
         font-size: 14px !important;
-        font-weight: 500 !important;
+        font-weight: 600 !important;
         padding: 10px 14px !important;
         width: 100% !important;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
         transition: all 0.2s ease-in-out !important;
         white-space: nowrap !important;
     }
-    div[data-testid="stColumn"] div[data-testid="stButton"] > button:hover {
-        background-color: #e2e8f0 !important;
-        border-color: #cbd5e1 !important;
-        color: #1a202c !important;
+    div[data-testid="stMain"] button:hover,
+    div[data-testid="stMain"] div[data-testid="stButton"] > button:hover,
+    div[data-testid="stMain"] div[data-testid="stFormSubmitButton"] > button:hover {
+        background-color: #383854 !important;
+        border-color: #4f4f75 !important;
+        color: #ffffff !important;
     }
+    div[data-testid="stMain"] button:active,
+    div[data-testid="stMain"] button:focus {
+        background-color: #1f1f2e !important;
+        border-color: #2b2b40 !important;
+        color: #ffffff !important;
+    }
+    
     div[data-testid="stBottomBlockContainer"] {
         background: transparent !important;
         padding-bottom: 24px !important;
@@ -522,23 +541,95 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# Silent background user agent & responsive mobile parameter checking setup
+st.components.v1.html("""
+<iframe src="javascript:void(0)" style="display:none" onload="
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+    const url = new URL(parent.window.location.href);
+    if (isMobile && url.searchParams.get('mobile') !== 'true') {
+        url.searchParams.set('mobile', 'true');
+        parent.window.location.href = url.href;
+    } else if (!isMobile && url.searchParams.get('mobile') === 'true') {
+        url.searchParams.delete('mobile');
+        parent.window.location.href = url.href;
+    }
+"></iframe>
+""", height=0)
+
 current_profile = load_profile()
+
 @st.dialog("Paste website & YouTube URLs to add as a source in IntellectAI")
 def websites_dialog():
+    is_mobile = st.query_params.get("mobile", "false") == "true"
     st.caption("Paste any links below to import as study sources.")
-    links = st.text_area("Paste any links", height=180, placeholder="https://example.com\nhttps://youtube.com/watch?v=...")
+    
+    if is_mobile:
+        st.info("📱 Mobile Mode Active: Tap below to paste links instantly from your clipboard.")
+        st.components.v1.html("""
+        <button id="paste-btn" style="
+            background-color: #2b2b40;
+            color: #ffffff;
+            border: 1px solid #3e3e5c;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-family: system-ui, sans-serif;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 12px;
+            font-weight: 600;
+        ">📋 Paste Link from Clipboard</button>
+        <script>
+            document.getElementById('paste-btn').addEventListener('click', async () => {
+                try {
+                    const text = await navigator.clipboard.readText();
+                    const url = new URL(window.parent.location.href);
+                    url.searchParams.set('pasted_link', text);
+                    window.parent.location.href = url.href;
+                } catch (err) {
+                    alert('Please allow clipboard access or paste manually.');
+                }
+            });
+        </script>
+        """, height=52)
+        
+        pasted_link = st.query_params.get("pasted_link", "")
+        if pasted_link:
+            st.success(f"Successfully Pasted: {pasted_link}")
+            
+    default_text = st.query_params.get("pasted_link", "")
+    links = st.text_area("Paste any links", value=default_text, height=180, placeholder="https://example.com\nhttps://youtube.com/watch?v=...")
+    
     if st.button("Insert", type="primary", key="ins_links"):
         urls = [u.strip() for u in links.replace("\n", " ").split(" ") if u.strip()]
         for u in urls:
             text = fetch_url_text(u)
             st.session_state.sources.append({"type": "🌐", "name": u, "content": f"[WEBSITE SOURCE: {u}]\n{text}"})
         st.session_state.view_state = "chat"
+        # Clean pasted parameter query context before reload
+        if "pasted_link" in st.query_params:
+            del st.query_params["pasted_link"]
         st.rerun()
 
 @st.dialog("Upload files from your folder")
 def upload_dialog():
+    is_mobile = st.query_params.get("mobile", "false") == "true"
     st.caption("Choose files from your computer folder to add as study sources.")
+    
+    if is_mobile:
+        st.info("📱 Mobile Mode Active: Trigger native file explorer/camera inputs dynamically below.")
+        camera_file = st.camera_input("📸 Capture note details instantly using device camera")
+        if camera_file:
+            img_bytes = camera_file.read()
+            st.session_state.sources.append({
+                "type": "📄", 
+                "name": f"camera_note_{datetime.now().strftime('%M%S')}.png", 
+                "content": f"[CAMERA CAPTURE NOTE: Captured dynamically on mobile]"
+            })
+            st.success("Camera snapshot appended!")
+            
     files = st.file_uploader("Upload files", type=["pdf", "docx", "txt", "md", "py", "csv", "json"], accept_multiple_files=True, key="uploader_main")
+    
     if st.button("Add as sources", type="primary", key="add_uploads"):
         for f in files or []:
             text = extract_file_text(uploaded_file=f, file_name=f.name)
@@ -548,13 +639,53 @@ def upload_dialog():
 
 @st.dialog("Select items")
 def drive_dialog():
+    is_mobile = st.query_params.get("mobile", "false") == "true"
     st.markdown("<div style='display:flex;align-items:center;gap:8px;margin-bottom:4px;'><b style='font-size:18px;'>Search in Drive or paste URL</b></div>", unsafe_allow_html=True)
-    drive_url = st.text_input("Paste a Google Drive link", key="drive_url_in")
+    
+    if is_mobile:
+        st.info("📱 Mobile Clipboard Assistant: Grab Drive link directly from clip storage.")
+        st.components.v1.html("""
+        <button id="paste-drive-btn" style="
+            background-color: #2b2b40;
+            color: #ffffff;
+            border: 1px solid #3e3e5c;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-family: system-ui, sans-serif;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 12px;
+            font-weight: 600;
+        ">📋 Paste Drive Link</button>
+        <script>
+            document.getElementById('paste-drive-btn').addEventListener('click', async () => {
+                try {
+                    const text = await navigator.clipboard.readText();
+                    const url = new URL(window.parent.location.href);
+                    url.searchParams.set('pasted_drive', text);
+                    window.parent.location.href = url.href;
+                } catch (err) {
+                    alert('Please allow clipboard access or paste manually.');
+                }
+            });
+        </script>
+        """, height=52)
+        
+        pasted_drive = st.query_params.get("pasted_drive", "")
+        if pasted_drive:
+            st.success(f"Drive Link Detected: {pasted_drive}")
+            
+    default_drive = st.query_params.get("pasted_drive", "")
+    drive_url = st.text_input("Paste a Google Drive link", value=default_drive, key="drive_url_in")
+    
     if st.button("Insert", type="primary", key="ins_drive"):
         if drive_url:
             text = fetch_url_text(drive_url)
             st.session_state.sources.append({"type": "📁", "name": drive_url, "content": f"[DRIVE SOURCE: {drive_url}]\n{text}"})
             st.session_state.view_state = "chat"
+            if "pasted_drive" in st.query_params:
+                del st.query_params["pasted_drive"]
             st.rerun()
 
 with st.sidebar:
