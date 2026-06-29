@@ -496,6 +496,29 @@ st.markdown("""
         font-size: 15px !important;
         line-height: 1.7 !important;
     }
+
+    /* Strict mobile styling overrides */
+    @media screen and (max-width: 600px) {
+        .main .block-container, div[data-testid="stAppViewBlockContainer"] {
+            padding-top: 10px !important;
+            height: 85vh !important;
+            overflow-y: hidden !important;
+        }
+        .hero-robot-img {
+            width: 80px !important;
+            height: 80px !important;
+            margin: 10px auto !important;
+        }
+        .hero-title-main {
+            font-size: 22px !important;
+        }
+        div[data-testid="stChatInput"] {
+            position: fixed !important;
+            bottom: 10px !important;
+            width: 90% !important;
+            left: 5% !important;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
